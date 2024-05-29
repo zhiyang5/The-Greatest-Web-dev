@@ -4,7 +4,7 @@ import consolemenu
 from consolemenu.items import *
 import shutil 
 
-API_CONTAINER_NAME = "marketweb"
+API_CONTAINER_NAME = "marketweb-api"
 
 def _apiContainerRunning():
     is_running = subprocess.run(f"docker ps", shell=True, capture_output=True, text=True).stdout.find('marketweb') > 0
